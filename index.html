@@ -169,7 +169,7 @@
     <div class="row">
       <div class="col-12" style="display: flex; margin-top: 25px;">
          <div class="col-lg-4" style="width: fit-content;">
-               <img src="logo.png" height="100px" style="margin-top: -20px;">
+               <img src="IMAGENES/logo.png" height="100px" style="margin-top: -20px;">
            </div>
           <div class="col-lg-6" style="display: flex; margin-left: 20px; margin-top: 15px;">
              <p style="margin-right: 25px;"><a href="index.html" class="active">Home</a></p>
@@ -179,7 +179,8 @@
             <p style="margin-right: 25px;"><a href="">Perfil</a></p>
             </div>   
             <div class="col-lg-2" style="display: flex; margin-left: 20px; margin-top: 15px; margin-left: auto;">
-              <p style="margin-right: 25px;"><a href="">Registrate</a></p>              <button>Login </button>
+              <p style="margin-right: 25px;"><a href="admin/register.html">Registrate</a></p>  
+              <button  id="openLoginBtn">Login </button>
             </div>
         </div>
      </div>
@@ -211,13 +212,13 @@
             <div class="row">
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
-                  <img src="popular-02.jpg" alt="">
+                  <img src="IMAGENES/popular-02.jpg" alt="">
                   <h4>Organiza<br><span>Mantén tus recursos, documentos y tareas perfectamente ordenados y accesibles</span></h4>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
-                  <img src="popular-03.jpg" alt="">
+                  <img src="IMAGENES/popular-03.jpg" alt="">
                   <h4>Simplifica<br><span>Centraliza todas tus actividades y proyectos en un solo lugar, ¡completamente gratis!</span>
                     </h4>
                 </div>
@@ -225,13 +226,13 @@
         
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
-                  <img src="popular-07.jpg" alt="">
+                  <img src="IMAGENES/popular-07.jpg" alt="">
                   <h4>Colabora<br><span>Facilita la comunicación y el trabajo en equipo entre los miembros de tu sociedad</span></h4>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
-                  <img src="popular-08.jpg" alt="">
+                  <img src="IMAGENES/popular-08.jpg" alt="">
                   <h4>Controla<br><span>Mantén un seguimiento detallado del progreso de tus proyectos y actividades</span></h4>
                 </div>
               </div>
@@ -280,7 +281,15 @@
       </div>
     </div>
   </footer>
-  <script src="bootstrap.min.js"></script>
+  <script src="bootstrap.min.js">
+
+  </script>
+  <script>
+    function openLog() {
+            window.location.href = 'admin/login.html';
+        }
+        document.getElementById('openLoginBtn').addEventListener('click', openLog);
+  </script>
   </body>
 
 </html>
